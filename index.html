@@ -13,22 +13,62 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+    body {
+      overflow: hidden;
+    }
+  </style>
   <body>
     <div id="flipbook">
-      <div class="hard">Turn.js</div>
-      <div class="hard"></div>
-      <div>Page 1</div>
-      <div>Page 2</div>
-      <div>Page 3</div>
-      <div>Page 4</div>
-      <div class="hard"></div>
-      <div class="hard"></div>
+      <div class="hard"><img src="assets/page_0-compressed.jpg" /></div>
+      <div><img src="assets/page_2_0-compressed.jpg" /></div>
+      <div><img src="assets/page_2_1-compressed.jpg" /></div>
+      <div><img src="assets/page_3_0-compressed.jpg" /></div>
+      <div><img src="assets/page_3_1-compressed.jpg" /></div>
+      <div><img src="assets/page_4_0-compressed.jpg" /></div>
+      <div><img src="assets/page_4_1-compressed.jpg" /></div>
+      <div><img src="assets/page_5_0-compressed.jpg" /></div>
+      <div><img src="assets/page_5_1-compressed.jpg" /></div>
+      <div><img src="assets/page_6_0-compressed.jpg" /></div>
+      <div><img src="assets/page_6_1-compressed.jpg" /></div>
+      <div><img src="assets/page_7_0-compressed.jpg" /></div>
+      <div><img src="assets/page_7_1-compressed.jpg" /></div>
+      <div><img src="assets/page_8_0-compressed.jpg" /></div>
+      <div><img src="assets/page_8_1-compressed.jpg" /></div>
+      <div><img src="assets/page_9-compressed.jpg" /></div>
     </div>
+
     <script type="text/javascript">
+      //   document.addEventListener("click", (event) => {
+      //     if (event.clientX > document.innerWidth / 2) {
+      //       console.log("right");
+      //       $("#flipbook").turn("next");
+      //     } else {
+      //       console.log("left");
+      //       $("#flipbook").turn("previous");
+      //     }
+      //   });
+
+      $("#flipbook").click(function (event) {
+        if (event.clientX >document.body.clientWidth / 2) {
+          $("#flipbook").turn("next");
+        } else {
+          $("#flipbook").turn("previous");
+        }
+      });
+
       $("#flipbook").turn({
-        width: 400,
-        height: 300,
-        autoCenter: true,
+        width: window.innerWidth,
+        height: window.innerWidth/2,
+
+        turnCorners: "bl,br",
+        elevation: 100,
+        duration: 2000,
       });
     </script>
   </body>
