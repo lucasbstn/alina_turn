@@ -55,7 +55,7 @@
       //   });
 
       $("#flipbook").click(function (event) {
-        if (event.clientX >document.body.clientWidth / 2) {
+        if (event.clientX > document.body.clientWidth / 2) {
           $("#flipbook").turn("next");
         } else {
           $("#flipbook").turn("previous");
@@ -64,7 +64,7 @@
 
       $("#flipbook").turn({
         width: window.innerWidth,
-        height: window.innerWidth/2,
+        height: window.innerWidth / 2,
 
         turnCorners: "bl,br",
         elevation: 100,
