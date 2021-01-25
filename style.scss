@@ -30,12 +30,12 @@ div.parent {
   }
 
   &.left {
-    left: 40px;
+    left: 2.5vw;
     transform: rotate(-135deg);
   }
 
   &.right {
-    right: 40px;
+    right: 2.5vw;
     transform: rotate(45deg);
   }
 }

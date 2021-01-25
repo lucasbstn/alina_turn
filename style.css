@@ -36,13 +36,13 @@ div.parent {
 }
 
 .arrow.left {
-  left: 40px;
+  left: 2.5vw;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
 }
 
 .arrow.right {
-  right: 40px;
+  right: 2.5vw;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
