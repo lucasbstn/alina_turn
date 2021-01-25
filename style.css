@@ -1,0 +1,42 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  overflow: hidden;
+}
+
+.arrow {
+  background-image: url("./assets/arrow.png");
+  width: 50px;
+  height: 100px;
+  z-index: 200;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 white);
+          filter: opacity(0.4) drop-shadow(0 0 0 white);
+}
+
+.arrow:hover {
+  -webkit-filter: opacity(1) drop-shadow(0 0 0 white);
+          filter: opacity(1) drop-shadow(0 0 0 white);
+}
+
+.arrow.left {
+  left: 40px;
+}
+
+.arrow.right {
+  right: 40px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=style.css.map */

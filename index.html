@@ -12,37 +12,40 @@
       integrity="sha512-rFun1mEMg3sNDcSjeGP35cLIycsS+og/QtN6WWnoSviHU9ykMLNQp7D1uuG1AzTV2w0VmyFVpszi2QJwiVW6oQ=="
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <style>
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-    }
-    body {
-      overflow: hidden;
-    }
-  </style>
+  <style></style>
   <body>
-    <div id="flipbook">
-      <div class="hard"><img src="assets/page_0-compressed.jpg" /></div>
-      <div><img src="assets/page_2_0-compressed.jpg" /></div>
-      <div><img src="assets/page_2_1-compressed.jpg" /></div>
-      <div><img src="assets/page_3_0-compressed.jpg" /></div>
-      <div><img src="assets/page_3_1-compressed.jpg" /></div>
-      <div><img src="assets/page_4_0-compressed.jpg" /></div>
-      <div><img src="assets/page_4_1-compressed.jpg" /></div>
-      <div><img src="assets/page_5_0-compressed.jpg" /></div>
-      <div><img src="assets/page_5_1-compressed.jpg" /></div>
-      <div><img src="assets/page_6_0-compressed.jpg" /></div>
-      <div><img src="assets/page_6_1-compressed.jpg" /></div>
-      <div><img src="assets/page_7_0-compressed.jpg" /></div>
-      <div><img src="assets/page_7_1-compressed.jpg" /></div>
-      <div><img src="assets/page_8_0-compressed.jpg" /></div>
-      <div><img src="assets/page_8_1-compressed.jpg" /></div>
-      <div><img src="assets/page_9-compressed.jpg" /></div>
+    <div>
+      <div id="flipbook">
+        <div class="hard"><img src="assets/page_0-compressed.jpg" /></div>
+        <div><img src="assets/page_2_0-compressed.jpg" /></div>
+        <div><img src="assets/page_2_1-compressed.jpg" /></div>
+        <div><img src="assets/page_3_0-compressed.jpg" /></div>
+        <div><img src="assets/page_3_1-compressed.jpg" /></div>
+        <div><img src="assets/page_4_0-compressed.jpg" /></div>
+        <div><img src="assets/page_4_1-compressed.jpg" /></div>
+        <div><img src="assets/page_5_0-compressed.jpg" /></div>
+        <div><img src="assets/page_5_1-compressed.jpg" /></div>
+        <div><img src="assets/page_6_0-compressed.jpg" /></div>
+        <div><img src="assets/page_6_1-compressed.jpg" /></div>
+        <div><img src="assets/page_7_0-compressed.jpg" /></div>
+        <div><img src="assets/page_7_1-compressed.jpg" /></div>
+        <div><img src="assets/page_8_0-compressed.jpg" /></div>
+        <div><img src="assets/page_8_1-compressed.jpg" /></div>
+        <div><img src="assets/page_9-compressed.jpg" /></div>
+      </div>
+      <div class="arrow left" onclick="previous()"></div>
+      <div class="arrow right" onclick="next()"></div>
     </div>
-
+    <script>
+      function previous() {
+        $("#flipbook").turn("previous");
+      }
+      function next() {
+        $("#flipbook").turn("next");
+      }
+    </script>
     <script type="text/javascript">
       //   document.addEventListener("click", (event) => {
       //     if (event.clientX > document.innerWidth / 2) {
