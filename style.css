@@ -7,16 +7,21 @@ img {
 
 body {
   overflow: hidden;
+  margin: 0;
+}
+
+div.parent {
+  position: relative;
 }
 
 .arrow {
-  background-image: url("./assets/arrow.png");
-  width: 50px;
-  height: 100px;
-  z-index: 200;
-  background-size: contain;
-  background-repeat: no-repeat;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
   position: absolute;
+  z-index: 200;
   top: 50%;
   cursor: pointer;
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
@@ -32,11 +37,13 @@ body {
 
 .arrow.left {
   left: 40px;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .arrow.right {
   right: 40px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */
