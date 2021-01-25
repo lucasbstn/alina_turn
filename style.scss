@@ -14,8 +14,8 @@ div.parent {
 
 .arrow {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 2vw;
+  height: 2vw;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   position: absolute;
@@ -38,7 +38,4 @@ div.parent {
     right: 40px;
     transform: rotate(45deg);
   }
-}
-
-@media (max-width: max-height/2) {
 }

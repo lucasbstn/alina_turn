@@ -47,16 +47,6 @@
       }
     </script>
     <script type="text/javascript">
-      //   document.addEventListener("click", (event) => {
-      //     if (event.clientX > document.innerWidth / 2) {
-      //       console.log("right");
-      //       $("#flipbook").turn("next");
-      //     } else {
-      //       console.log("left");
-      //       $("#flipbook").turn("previous");
-      //     }
-      //   });
-
       $("#flipbook").click(function (event) {
         if (event.clientX > document.body.clientWidth / 2) {
           $("#flipbook").turn("next");
