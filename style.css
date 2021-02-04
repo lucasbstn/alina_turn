@@ -2,7 +2,7 @@ img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 body {
@@ -16,8 +16,8 @@ div.parent {
 
 .arrow {
   display: inline-block;
-  width: 2vw;
-  height: 2vw;
+  width: 4vw;
+  height: 4vw;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   position: absolute;
@@ -27,23 +27,23 @@ div.parent {
   -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
   -webkit-filter: opacity(0.4) drop-shadow(0 0 0 white);
-          filter: opacity(0.4) drop-shadow(0 0 0 white);
+  filter: opacity(0.4) drop-shadow(0 0 0 white);
 }
 
 .arrow:hover {
   -webkit-filter: opacity(1) drop-shadow(0 0 0 white);
-          filter: opacity(1) drop-shadow(0 0 0 white);
+  filter: opacity(1) drop-shadow(0 0 0 white);
 }
 
 .arrow.left {
   left: 2.5vw;
   -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .arrow.right {
   right: 2.5vw;
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */
